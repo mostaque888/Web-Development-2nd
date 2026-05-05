@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BigPlanetarium | The Milky Way</title>
+  <meta name="description" content="Accessible educational website prototype about the Milky Way and the planets.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">BigPlanetarium</a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a aria-current="page" href="index.html">Home</a></li>
+          <li><a href="planets.html">Planets</a></li>
+          <li><a href="mars.html">Mars</a></li>
+          <li><a href="jupiter.html">Jupiter</a></li>
+          <li><a href="qa.html">Q&amp;A</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <main id="main-content">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Explore our home galaxy</p>
+          <h1>The Milky Way: A galaxy full of wonder</h1>
+          <p class="lead">
+            BigPlanetarium is a Bristol-based educational planetarium. This prototype introduces
+            the Milky Way in a simple, engaging and accessible way so more people can enjoy
+            learning about space.
+          </p>
+          <div class="button-row">
+            <a class="button" href="planets.html">Explore the planets</a>
+            <a class="button button-secondary" href="#facts">Quick galaxy facts</a>
+          </div>
+        </div>
+
+        <figure class="hero-image">
+          <img src="galaxy.jpg" alt="Illustration of the Milky Way galaxy with glowing spiral structure and stars.">
+          <figcaption>Illustration inspired by the shape of the Milky Way.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="facts" class="section">
+      <div class="container narrow">
+        <h2>What is the Milky Way?</h2>
+        <p>
+          The Milky Way is the galaxy that contains our Solar System. 
+          It is a large spiral galaxy made up of billions of stars, as well as gas, dust and planets.
+           Our Sun is located in a smaller region called the Orion Arm. 
+           From Earth, the Milky Way can sometimes be seen as a faint band of light stretching across the night sky. 
+           Studying the Milky Way helps us understand where our Solar System is located in space and how galaxies are formed and organised.
+        </p>
+
+        <div class="card-grid">
+          <article class="card">
+            <h3>Huge in size</h3>
+            <p>
+              The Milky Way is more than 100,000 light-years across, which means it is unimaginably large.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Home to our Solar System</h3>
+            <p>
+              Earth and the other planets orbit the Sun, and the Sun itself orbits the centre of the Milky Way.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Best seen in dark skies</h3>
+            <p>
+              From dark places away from city lights, the Milky Way can appear as a pale band of light across the sky.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="source-box">
+            <h2>Learning Sources</h2>
+            <p>
+                More information:
+                <a href="https://en.wikipedia.org/wiki/Milky_Way" target="_blank">Wikipedia: Milky Way</a> |
+                <a href="https://science.nasa.gov/solar-system/" target="_blank">NASA: Solar System</a>
+            </p>
+        </section>
+
+    <section class="section section-alt">
+      <div class="container split">
+        <div>
+          <h2>Interactive space fact</h2>
+          <p>
+            Press the button to reveal a random astronomy fact. 
+          </p>
+          <button id="fact-button" class="button" type="button" aria-describedby="fact-output">
+            Show a space fact
+          </button>
+          <p id="fact-output" class="fact-output" aria-live="polite">A fact will appear here.</p>
+        </div>
+
+        <aside class="callout" aria-labelledby="galaxy-topics-title">
+  <h3 id="galaxy-topics-title">Galaxy Topics</h3>
+  <ul>
+    <li><strong>The Milky Way:</strong> Learn about the galaxy that contains our Solar System.</li>
+    <li><strong>Galaxy Formation:</strong> Understand how galaxies develop over time.</li>
+    <li><strong>Stars and Dust:</strong> Explore the materials that make up galaxies.</li>
+    <li><strong>Spiral Shape:</strong> Discover why some galaxies have spiral arms.</li>
+    <li><strong>Our Solar System:</strong> See where Earth is located inside the Milky Way.</li>
+    <li><strong>Space Science:</strong> Find out why galaxies are important to astronomy.</li>
+  </ul>
+</aside>
+      </div>
+    </section>
+
+    <section class="section"> 
+  </main>
+  <section class="section">
+  <div class="container media-section">
+    <h2>Space video</h2>
+    <p>Watch the latest official NASA Artemis video on the source page.</p>
+    <video controls class="media-box">
+      <source src="galaxy.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</section>
+<iframe
+    width="560"
+    height="315"
+    src="https://www.youtube.com/embed/0jHsq36_NTU"
+    title="Milky Way educational video"
+    allowfullscreen>
+</iframe>
+
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>BigPlanetarium prototype website for educational use.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BigPlanetarium | Jupiter</title>
+  <meta name="description" content="Accessible educational page about Jupiter.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">BigPlanetarium</a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="planets.html">Planets</a></li>
+          <li><a href="mars.html">Mars</a></li>
+          <li><a aria-current="page" href="jupiter.html">Jupiter</a></li>
+          <li><a href="qa.html">Q&amp;A</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-banner">
+      <div class="container">
+        <h1>Jupiter: The giant planet</h1>
+        <p>
+          Jupiter is the largest planet in our Solar System. It is famous for its size,
+          strong storms and the Great Red Spot.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split">
+        <figure>
+          <img src="jupiter.jpg" alt="Illustration of Jupiter with orange and cream coloured bands.">
+          <figcaption>Jupiter is a gas giant with thick cloud bands and a huge storm called the Great Red Spot.</figcaption>
+        </figure>
+
+        <div>
+          <h2>Fast facts about Jupiter</h2>
+          <ul class="feature-list">
+            <li>Jupiter is the fifth planet from the Sun.</li>
+            <li>It is the largest planet in the Solar System.</li>
+            <li>It is a gas giant made mainly of hydrogen and helium.</li>
+            <li>Jupiter has many moons, including Europa, Io, Ganymede and Callisto.</li>
+          </ul>
+
+          <h2>Mini quiz</h2>
+          <form class="quiz-box">
+            <fieldset>
+              <legend>What is Jupiter best known for?</legend>
+              <label><input type="radio" name="jupiter-feature" value="Rings"> Only its rings</label>
+              <label><input type="radio" name="jupiter-feature" value="Largest"> Being the largest planet</label>
+              <label><input type="radio" name="jupiter-feature" value="Smallest"> Being the smallest planet</label>
+            </fieldset>
+
+            <button id="jupiter-quiz-button" class="button" type="button">Check answer</button>
+            <p id="jupiter-quiz-result" aria-live="polite">Choose an answer and press the button.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+  <div class="container media-section">
+    <h2>Space video</h2>
+    <p>Watch the latest official NASA Artemis video on the source page.</p>
+    <video controls class="media-box">
+      <source src="jupiter.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</section>
+ <section class="source-box">
+            <h2>Learning Sources</h2>
+            <p>
+                More information:
+                <a href="https://en.wikipedia.org/wiki/Jupiter" target="_blank">Wikipedia: Jupiter</a> |
+                <a href="https://science.nasa.gov/jupiter/" target="_blank">NASA: Jupiter</a>
+            </p>
+        </section>
+
+        
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Jupiter is a giant world with powerful storms and many moons.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
